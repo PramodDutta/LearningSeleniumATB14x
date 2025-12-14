@@ -25,7 +25,7 @@ This project is built using the following technologies:
 The project follows a structured approach with separate packages for different Selenium concepts:
 
 ```
-src/main/java/com/thetestingacademy
+src/test/java/com/thetestingacademy
 ├── ex01_Selenium_Basics
 ├── ex02_Selenium_Basics
 ├── ex03_Selenium_Locators
