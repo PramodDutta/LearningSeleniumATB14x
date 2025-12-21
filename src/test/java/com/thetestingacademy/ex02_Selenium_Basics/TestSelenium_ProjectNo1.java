@@ -4,6 +4,7 @@ import com.thetestingacademy.CommonToAll;
 import io.qameta.allure.Description;
 import io.qameta.allure.Link;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class TestSelenium_ProjectNo1 extends CommonToAll {
     @Test
     public void test_verify_text(){
 
-        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = new ChromeDriver();
         openBrowser(driver,"https://katalon-demo-cura.herokuapp.com");
 
         if(driver.getPageSource().contains("CURA Healthcare Service")){
@@ -28,7 +29,7 @@ public class TestSelenium_ProjectNo1 extends CommonToAll {
 
         }
 
-        closeBrowser(driver);
+        // closeBrowser(driver);
 
 
 
