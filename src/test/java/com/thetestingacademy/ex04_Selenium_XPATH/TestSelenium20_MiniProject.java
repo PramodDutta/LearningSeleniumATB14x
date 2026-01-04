@@ -12,13 +12,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 public class TestSelenium20_MiniProject extends CommonToAll {
     @Owner("Pramod")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Verify login is working")
     @Test
     public void test_OHRM_login() throws InterruptedException {
+
+
         WebDriver driver = new ChromeDriver();
+
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
         openBrowser(driver,"https://awesomeqa.com/hr/web/index.php/auth/login");
 
         WebElement input_username = driver.findElement(By.xpath("//input[@name=\"username\"]"));
